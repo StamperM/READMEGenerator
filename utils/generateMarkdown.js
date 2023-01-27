@@ -1,11 +1,9 @@
 // TODO: Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 function renderLicenseBadge(license) {
-  license.forEach(element => {
-    if (license ==="MIT"){
-
+  
+    if (license === "MIT"){
     return "![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)"; 
-    
     }else if(license ==="Appache 2.0")
   {
     return "![license](https://img.shields.io/badge/License-Apache_2.0-blue.svg)"; 
@@ -14,8 +12,8 @@ function renderLicenseBadge(license) {
 }else{
   return "";
 }
-});
-}
+};
+
 
   
   
@@ -25,9 +23,7 @@ function renderLicenseBadge(license) {
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) { 
-  license.forEach(element => {
-    
+function renderLicenseLink(license) {     
   
   if (license ==="MIT"){
 
@@ -40,8 +36,7 @@ function renderLicenseLink(license) {
     return "(https://opensource.org/licenses/MPL-2.0)"
   }else {
     return "";
-  }});
-  }
+  }}
 
 
 // TODO: Create a function that returns the license section of README
@@ -63,7 +58,7 @@ function generateMarkdown(data) {
   ## Desciption\n ${data.Description}\n\n 
   ## Installation \n${data.Installation}
   ## Usage \n ${data.Usage}\n\n 
-  ## License\n renderLicenseLing(${data.License})
+  ## License\n ${renderLicenseLink(data.License)}
   ## Contributes\n ${data.Contribute}\n\n
   ## Test\n ${data.Test}\n\n
   ## Questions \n ${data.Questions}\n 

@@ -28,9 +28,9 @@ const questions = [
     name: 'Usage',
   },
   {
-    type:"checkbox",
+    type:"list",
     message: "Which liscense do you need to include",
-    choices:["MIT","Appache 2.0"],
+    choices:["MIT","Appache 2.0","Mozilla"],
     name:"License",
 },
  {
@@ -54,11 +54,7 @@ const questions = [
     message:"gitHub Profile",
     name:"gitHubProfile"
 },
-{
-  type:"input",
-  message:"gitHub Repo",
-  name:"github"
-},
+
 {
   type:"input",
   message:"GitHub email",
@@ -70,9 +66,7 @@ const questions = [
 inquirer
 .prompt(questions)
 .then(answers =>{
-  console.log(answers);
-
-
+ 
   fs.writeFile('README.md',generateMarkdown(answers), function(err){
     if (err) throw err;
   console.log("saved")
