@@ -58,7 +58,8 @@ function generateMarkdown(data) {
   -[Usage](#Usage)\n
   -[Contributes](#Contributes)\n
   -[Test](#Test)\n
-  -[Questions](#Questions)\n\n
+  -[Questions](#Questions)\n
+
   ## Desciption\n ${data.Description}\n\n 
   ## Installation \n${data.Installation}
   ## Usage \n ${data.Usage}\n\n 

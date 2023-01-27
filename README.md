@@ -1,4 +1,4 @@
- # sjdlfkjasd  
+ # README File Generator  
   undefined
   
 
@@ -12,34 +12,34 @@
 
   -[Contributes](#Contributes)
 
-  -[Test](#Test
+  -[Test](#Test)
 
   -[Questions](#Questions)
 
 
   ## Desciption
- ksajdflsakdjf
+ This is away to create README's quickly and       consitently
 
  
   ## Installation 
-djflsjdkf
+Node
   ## Usage 
- ksjdflsajkdf
+ 
 
  
   ## License
  renderLicenseLing(MIT)
   ## Contributes
- fasdf
+ N/A
 
 
   ## Test
- sdfasdf
+ None
 
 
   ## Questions 
- sdfasdf
+ Please email or take a look at my GitHub
  
-  [GitHub](sdfasdf)
+  [GitHub](StamperM)
 
-  [Contact Me](mailto:asdfsdf)
+  [Contact Me](mailto:melissagillen@gmail.com)
