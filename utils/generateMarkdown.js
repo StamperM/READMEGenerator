@@ -14,10 +14,6 @@ function renderLicenseBadge(license) {
 }
 };
 
-
-  
-  
-
   
 
 
