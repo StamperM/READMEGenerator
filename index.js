@@ -3,12 +3,14 @@ const inquirer = require('inquirer');
 const fs = require("fs");
 const generateMarkdown = require("./utils/generateMarkdown");
 
+
 const questions = [ 
   {
     type: 'input',
     message: 'What is your Projects Title?',
     name: 'Title',
   },
+
   {
       type: "input",
       message:"Please provide a short description. What problem is beign solve, why did you build this, what did you gain? ",
@@ -16,64 +18,71 @@ const questions = [
 
   },
   {
-      type:"confirm",
-      message:"Is a table of contents needed?",
-      name:"TableOfContents",
-  },
-  {
     type: 'input',
     message: 'What is needed for installation?',
     name: 'Installation',
   },
   {
-    type: 'confirm',
-    message: 'Do you have instructions or Example to show?',
+    type: 'input',
+    message: 'Add any instructions or Examples',
     name: 'Usage',
   },
   {
-      type:"confirm",
-      message:"Do you need to add collaborators?",
-      name: "Credits"
-  },
-  {
-      type:"checkbox",
-      message: "Which liscense do you need to include",
-      choices:["MIT","Microsoft Public License","Eclipse Public License 2.0","Mozilla Public License 2.0","Open Software License 3.0"],
-      name:"License",
-  },
-  {
-      type:"confirm",
-      message:"How to contribute?",
-      name:"Contribute",
-  },
-  {
-          type:"confirm",
-          message:"Do you want to provide test?",
-          name: "Test"
+    type:"checkbox",
+    message: "Which liscense do you need to include",
+    choices:["MIT","Appache 2.0"],
+    name:"License",
+},
+ {
+    type:"input",
+    message:"List the people who assited and add a comma between each contributor.",
+    name:"Contribute",
+},
+
+  {      
+     type:"input",
+     message:"Do you want to provide test?",
+     name: "Test"
       },
   {
-      type:"confirm",
-      message:"Do you want to provide a questions section?",
+      type:"input",
+      message:"Instructions on contacting",
       name:"Questions"
   },
+  {
+    type:"input",
+    message:"gitHub Profile",
+    name:"gitHubProfile"
+},
+{
+  type:"input",
+  message:"gitHub Repo",
+  name:"github"
+},
+{
+  type:"input",
+  message:"GitHub email",
+  name:"email"
+},
 
 ]
+
 inquirer
 .prompt(questions)
 .then(answers =>{
   console.log(answers);
-  fs.writeFile('README.md',JSON.stringify(answers), function(err){
+
+
+  fs.writeFile('README.md',generateMarkdown(answers), function(err){
     if (err) throw err;
   console.log("saved")
-      });
-// TODO: Create an array of questions for user input
-
-})
-// TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+  
+      })
+    })
 
 // TODO: Create a function to initialize app
-function init() {}
+
+function init() {};
 
 // Function call to initialize app
 init();
