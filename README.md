@@ -1,5 +1,5 @@
  # README Generator  
-  ![license](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
   
 
  ## Table of Contents
@@ -18,28 +18,28 @@
 
 
   ## Desciption
- This project will help with keeping my README's clean and organized. This will also allow me to not forget any of the standards that are needed in a README.
+ This will allow you to create a README Quickly and effienctly.
 
  
   ## Installation 
-node
+Node
   ## Usage 
- Please see video below.
+ See picture/video.
 
  
   ## License
- 
+ (https://opensource.org/licenses/MIT)
   ## Contributes
  N/A
 
 
   ## Test
- N/A
+ No
 
 
   ## Questions 
- For more info please feel free to email or check-out my GitHub. 
+ If you would like to contact me please use my email. For more info please check out my GitHub.
  
-  [GitHub](https://github.com/StamperM)
+  [GitHub](StamperM)
 
-  [Contact Me](mailto:melissa.gllen@gmail.com)
+  [Contact Me](mailto:melissagillen@gmail.com)
