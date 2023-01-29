@@ -1,5 +1,4 @@
- # README Generator  
-  ![license](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+ # README Generator 
   
 
  ## Table of Contents
@@ -9,7 +8,6 @@
   -[Installation](#Installation)
  
   -[Usage](#Usage)
-
 
 
 
